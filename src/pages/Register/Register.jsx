@@ -1,12 +1,17 @@
+import { RegisterBg } from "../../assets";
+import { Input } from "../../components";
 import "./Register.scss";
 function Register() {
   return (
     <div className="main-page">
       <div className="left">
-        <p>Ilustrasi</p>
+        <img src={RegisterBg} className="bg-image" />
       </div>
       <div className="right">
-        <p>Form Register</p>
+        <p className="title">Register</p>
+        <Input />
+        <Input />
+        <Input />
       </div>
     </div>
   );

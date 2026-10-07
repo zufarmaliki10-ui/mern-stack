@@ -7,7 +7,7 @@ function Login() {
         <img src={LoginBg} className="bg-image" />
       </div>
       <div className="right">
-        <p className="title">Login</p>
+        <p className="title"></p>
         <Input label="Email" placeholder="Email" />
         <Gap height={15} />
         <Input label="Password" placeholder="Password" />

@@ -15,7 +15,7 @@ function Register() {
         <Gap height={15} />
         <Input label="Password" placeholder="Password" />
         <Gap height={40} />
-        <Button title="Register" />
+        <Button title="REGISTER" />
         <Gap height={100} />
         <Link title="Kembali ke Login" />
       </div>

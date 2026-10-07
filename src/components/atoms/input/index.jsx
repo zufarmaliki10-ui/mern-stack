@@ -1,9 +1,9 @@
 import "./input.scss";
-function Input() {
+function Input({ label, ...rest }) {
   return (
     <div className="input-wrapper">
-      <label className="label">Label Input</label>
-      <input className="input" placeholder="form input" />
+      <label className="label">{label}</label>
+      <input className="input" {...rest} />
     </div>
   );
 }

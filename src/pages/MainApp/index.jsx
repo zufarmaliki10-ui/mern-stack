@@ -1,13 +1,18 @@
 import { Outlet } from "react-router-dom";
+import { Footer, Header } from "../../components/molecules";
 
 function MainApp() {
   return (
-    <div>
-      <p>Header</p>
-      <main>
+    <div className="main-app-wrapper">
+      <div className="header-wrapper">
+        <Header />
+      </div>
+      <main className="content-wrapper">
         <Outlet />
       </main>
-      <p>Footer</p>
+      <div className="footer-wrapper">
+        <Footer />
+      </div>
     </div>
   );
 }

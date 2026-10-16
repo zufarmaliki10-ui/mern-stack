@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { RegisterBg } from "../../../assets";
-import { Link } from "../../atoms";
+import { Button, Gap } from "../../atoms";
 import "./blogItem.scss";
 
 function BlogItem() {
@@ -17,7 +17,8 @@ function BlogItem() {
           nisi ipsam velit similique officiis commodi impedit, molestiae, cum
           nam ratione fugit tempore!
         </p>
-        <Link
+        <Gap height={20} />
+        <Button
           title="Baca selengkapnya"
           onClick={() => navigate("/detail-blog")}
         />

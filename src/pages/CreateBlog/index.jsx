@@ -7,7 +7,7 @@ function CreateBlog() {
       <p className="title">Create New Blog Post</p>
       <Input label="Judul Blog" placeholder="Masukkan judul blog..." />
       <Upload />
-      <TextArea />
+      <TextArea placeholder="Tulis deskripsi disini..." />
       <Gap height={20} />
       <div className="button-action">
         <Button title="Kembali" />

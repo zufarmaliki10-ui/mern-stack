@@ -1,7 +1,10 @@
+import { useNavigate } from "react-router-dom";
 import { RegisterBg } from "../../../assets";
+import { Link } from "../../atoms";
 import "./blogItem.scss";
 
 function BlogItem() {
+  const navigate = useNavigate();
   return (
     <div className="blog-item">
       <img className="image-thumb" src={RegisterBg} alt="post" />
@@ -14,6 +17,10 @@ function BlogItem() {
           nisi ipsam velit similique officiis commodi impedit, molestiae, cum
           nam ratione fugit tempore!
         </p>
+        <Link
+          title="Baca selengkapnya"
+          onClick={() => navigate("/detail-blog")}
+        />
       </div>
     </div>
   );

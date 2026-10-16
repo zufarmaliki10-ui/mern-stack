@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import { LoginBg } from "../../assets";
 import { Button, Gap, Input, Link } from "../../components";
 function Login() {
+  const navigate = useNavigate();
   return (
     <div className="main-page">
       <div className="left">
@@ -12,9 +14,9 @@ function Login() {
         <Gap height={15} />
         <Input label="Password" placeholder="Password" />
         <Gap height={40} />
-        <Button title="LOGIN" />
+        <Button title="LOGIN" onClick={() => navigate("/")} />
         <Gap height={100} />
-        <Link title="Buat Akun" />
+        <Link title="Buat Akun" onClick={() => navigate("/register")} />
       </div>
     </div>
   );
